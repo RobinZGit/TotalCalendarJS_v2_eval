@@ -16,10 +16,10 @@
  
 <body onload="loadTrainData()" onresize="resizeAll()">
 
-<!--
+
 <button id="ttt" style="float:right;height:100px;width:25%" onclick="test()">test </button>
 <textarea id="idTestText" style="width:100%;height:400px;" > </textarea>
--->
+
 <div id="externalcall" style="height:30px;width:100%;background-color:red;display:none"> ЗАПЛАНИРОВАНА ТРЕНИРОВКА
 </div>
 <div id = idDivCalendar style="font-weight:bold;height:30px"> Календарь тренировок c <input id="inputMinDay" type="number" size="5" value ="0"> по <input id="inputMaxDay" type="number" size="5" value ="1"> дней от сегодняшнего </div>
@@ -1086,10 +1086,7 @@
   }
 
   function test(){
-    aA=[];
-    for(i=12;i<14;i++) aA.push(Gl_aMetaRithm[i])
-    //alert(aA)
-    stus(aA, 'diff')
+    eval(document.getElementById('idTestText').value)
   }
 
   //<<для раскрытия скобок - первая и последняя открывающая скобка строки
